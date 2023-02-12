@@ -47,6 +47,9 @@ submit.addEventListener("click", () => {
     bookmarkArr = [bookmark, ...bookmarkArr];
     saveBookMark(bookmarkArr);
     printOutBookMark();
+    addMarks.innerHTML = `
+         <i class="fa fa-plus" aria-hidden="true"></i>
+    `
 })
 
 function saveBookMark(bookmarkArr){
