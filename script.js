@@ -37,6 +37,11 @@ submit.addEventListener("click", () => {
 
     if(check1 == "" || check1 == undefined || check2 == "" || check2 == undefined) return;
 
+    if(!(check1.includes(`https://`))) {
+        alert(`make sure your link url includes https://`);
+        return;
+    }
+
     appHeader.classList.remove("active");
 
     const bookmark = {
