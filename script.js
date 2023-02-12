@@ -50,6 +50,8 @@ submit.addEventListener("click", () => {
     addMarks.innerHTML = `
          <i class="fa fa-plus" aria-hidden="true"></i>
     `
+    myUrl.value = "";
+    site.value = "";
 })
 
 function saveBookMark(bookmarkArr){
